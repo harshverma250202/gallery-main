@@ -1,0 +1,697 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel = "icon" href = "https://templatemo.com/templates/templatemo_466_cafe_house/img/favicon.ico" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+
+      *{
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+
+
+
+
+      
+
+        /* .col-md{
+             background-color: aqua;
+            margin: 5px;
+            /* border: 2px solid black;
+            box-shadow: black;
+            transition-duration: 5s;
+             overflow: hidden;
+             height: 40vh;
+             position: relative;
+            
+        } */
+
+        img{
+          
+          
+        
+          transition: transform 0.2s ease-out;
+          width: 100%;
+          height: 100%;
+
+
+        }
+
+        .out img:hover{
+          z-index: 2;
+          /* transform: scale(1.2); */
+        }
+
+
+        .harshmodal{
+
+          position: fixed;
+    
+        
+          top: 0;
+          bottom: 0;
+          
+          display: none;
+
+          background-color: rgba(0,0,0,0.7);
+          
+          
+          width: 100%;
+
+       
+          justify-content: center;
+           align-items: center;
+
+        } 
+     .out{
+       /* display: none; */
+     }
+
+
+     .centermodal{
+       /* border: 2px solid blue; */
+       margin: auto;
+     
+        width: 60%;
+       height: 60vh; 
+       position: relative;
+       z-index: 100;
+       overflow: hidden;
+       
+ 
+     
+     }
+
+
+     #cross{
+       position: absolute;
+       top: 0px;
+      right: 0px;
+      /* font-size: 35px;
+       color: white;
+       font-weight: bolder; */
+     }
+
+     #left{
+
+       position: absolute;
+       top: 45%;
+       left: 5%;
+       font-size: 35px;
+       color: white;
+       font-weight: bolder;
+     }
+
+     
+     #right{
+
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+    }
+
+    /* .imgmodal{
+      animation: hii 1s linear;
+
+    }
+
+    @keyframes hii{
+
+      0%{
+        transform: translateY(-100%);
+
+      }
+      100%{
+        transform: translateY(0);
+
+      }
+    } */
+
+
+     .textbig{
+        display: none;
+            
+            color: white;
+
+            
+            top:80%;
+             position: absolute;
+
+             /* animation: hii 0.2s linear; */
+             text-align: center;
+   width: 100%;
+             
+           
+     }
+     .textsmall{
+      display: none;
+      color: white;
+      position: absolute;
+      top: 70%;
+      text-align: center;
+   width: 100%;
+
+      /* text-align: center; */
+      /* animation: hii 0.2s linear;
+      animation-delay: 1s; */
+      
+     }
+
+
+
+     @keyframes hii{
+
+       0%{
+         transform: translateY(-100%);
+         opacity: 0;
+       }
+       100%{
+         transform: translateY(0);
+         opacity: 1;
+       }
+     }
+
+
+
+
+
+
+
+
+
+
+
+     /* .textbig:hover{
+          display: block;
+          z-index: 10001;
+       
+      }
+      .textsmall:hover{
+
+
+        display: block;
+        z-index: 10001;
+      } */
+
+      
+    /* SHUBHAM CODE */
+    .rows {
+      justify-content: center;
+      /* margin: 0 -22px; */
+    }
+
+    .rows::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container-fluid {
+
+      padding: 0 17px;
+    }
+
+    [class*="cols-"] {
+      float: left;
+      padding: 5px;
+    }
+
+    .cols-big {
+      position: relative;
+    }
+
+    .cols-small {
+      position: relative;
+    }
+
+    .cols-1 {
+      width: 27%;
+      height: 250px;
+    }
+    .cols-2 {
+      width: 19%;
+      height: 250px;
+    }
+    .cols-3 {
+      width: 28%;
+      height: 250px;
+    }
+    .cols-4 {
+      width: 26%;
+      height: 250px;
+    }
+
+
+    .cols-5 {
+      width: 20%;
+      height: 250px;
+    }
+    .cols-6 {
+      width: 20%;
+      height: 250px;
+    }
+    .cols-8 {
+      width: 30%;
+      height: 250px;
+    }
+    .cols-9 {
+      width: 30%;
+      height: 250px;
+    }
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   /* .textbig{
+        display: none;
+    }
+    .textsmall {
+        display: none;
+    }
+    i {
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    } */
+
+    @media only screen and (max-width: 992px) {
+      .cols-big {
+        width: 53%;
+      }
+
+      .cols-small {
+        width: 47%;
+      }
+      .centermodal{
+
+        width: 100%;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .cols-big {
+        width: 100%;
+      }
+
+      .cols-small {
+        width: 100%;
+      }
+    }
+    
+        
+
+    </style>
+</head>
+<body>
+<div class="out">
+<div class="container-fluid">
+    <div class="row">
+      <div class="cols-1 cols-big"   onmouseover="texthover1()" onmouseout="textout1()" ><img src="https://images.unsplash.com/photo-1597966095004-c6e4a0993b6d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" onclick="fcuk(this,1 )" ><p  id="textsmall1" class="textsmall" >INFO</p><h2 id="textbig1" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-2 cols-small"   onmouseover="texthover2()" onmouseout="textout2()" ><img src="https://images.unsplash.com/photo-1618020503938-33e1376d7441?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" onclick="fcuk(this,2 )" ><p id="textsmall2" class="textsmall">INFO</p><h2 id="textbig2" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-3 cols-small"  onmouseover="texthover3()" onmouseout="textout3()"><img src="https://images.unsplash.com/photo-1620153874520-aabdacf78006?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" onclick="fcuk(this,3 )" ><p id="textsmall3" class="textsmall">INFO</p><h2 id="textbig3" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-4 cols-big"  onmouseover="texthover4()" onmouseout="textout4()"><img src="https://images.unsplash.com/photo-1619901373505-bb71126e5fbb?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" onclick="fcuk(this,4 )" ><p id="textsmall4" class="textsmall">INFO</p><h2 id="textbig4" class="textbig">Ecelllllll</h2></div> 
+    </div>
+  </div>
+  <div class="container-fluid     ">
+    <div class="row">
+      <div class="cols-5 cols-big"  onmouseover="texthover5()" onmouseout="textout5()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges1.jpg" onclick="fcuk(this,5 )"><p id="textsmall5" class="textsmall">INFO</p><h2  id="textbig5" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-8 cols-small"  onmouseover="texthover6()" onmouseout="textout6()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges2.jpg" onclick="fcuk(this,6 )"><p id="textsmall6" class="textsmall">INFO</p><h2  id="textbig6" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-9 cols-small"  onmouseover="texthover7()" onmouseout="textout7()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges3.jpg" onclick="fcuk(this,7 )"><p id="textsmall7" class="textsmall">INFO</p><h2  id="textbig7" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-6 cols-big"  onmouseover="texthover8()" onmouseout="textout8()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges4.jpg" onclick="fcuk(this,8)" ><p id="textsmall8" class="textsmall">INFO</p><h2  id="textbig8" class="textbig">Ecelllllll</h2></div>  
+    </div>
+  </div>
+  <div class="container-fluid     ">
+    <div class="row">
+     
+      <div class="cols-3 cols-big"  onmouseover="texthover9()" onmouseout="textout9()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges5.jpg" onclick="fcuk(this,9)" ><p id="textsmall9" class="textsmall">INFO</p><h2  id="textbig9" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-1 cols-small"  onmouseover="texthover10()" onmouseout="textout10()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges6.jpg" onclick="fcuk(this,10)"><p id="textsmall10" class="textsmall">INFO</p><h2 id="textbig10" class="textbig">Ecelllllll</h2></div>
+      <div class="cols-2 cols-small"  onmouseover="texthover11()" onmouseout="textout11()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges7.jpg" onclick="fcuk(this,11)"><p id="textsmall11" class="textsmall">INFO</p><h2 id="textbig11" class="textbig">Ecelllllll</h2></div>  
+      <div class="cols-4 cols-big"  onmouseover="texthover12()" onmouseout="textout12()" ><img src="https://www.ecell-iitkgp.org/images/gallery1/ges8.jpg" onclick="fcuk(this,12)"><p id="textsmall12" class="textsmall">INFO</p><h2 id="textbig12" class="textbig">Ecelllllll</h2></div> 
+    
+    </div>
+  </div>
+  <!-- <div class="container-fluid     ">
+<div class="row">
+     
+      <div class="col-md p-0"    ><img src="https://source.unsplash.com/collection/190732/1600x900" onclick="fcuk(this,13)" ></div>
+      <div class="col-md p-0"    ><img src="https://source.unsplash.com/collection/190733/1600x900" onclick="fcuk(this,14)" ></div>
+      <div class="col-md p-0"    ><img src="https://source.unsplash.com/collection/190734/1600x900" onclick="fcuk(this,15)" ></div>  
+      <div class="col-md p-0"    ><img src="https://source.unsplash.com/collection/190735/1600x900" onclick="fcuk(this,16)" ></div>
+    
+    </div>
+</div> -->
+</div>
+
+
+<div class="container-fluid harshmodal" id="harshmodelid">
+
+  
+  <div class="centermodal" ><span class="btn btn-outline-light" id="cross" onclick="cross()">x</span>
+   
+    <span  id="left" onclick="leftclick()" ><</i></span><img id="imgmodal"> <span  onclick="rightclick()" id="right" >> </span>
+  
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+var image= new Array(12);
+image[0]='https://images.unsplash.com/photo-1597966095004-c6e4a0993b6d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+image[1]='https://images.unsplash.com/photo-1618020503938-33e1376d7441?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+image[2]='https://images.unsplash.com/photo-1620153874520-aabdacf78006?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+image[3]='https://images.unsplash.com/photo-1619901373505-bb71126e5fbb?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+image[4]= 'https://www.ecell-iitkgp.org/images/gallery1/ges1.jpg'
+image[5]= 'https://www.ecell-iitkgp.org/images/gallery1/ges2.jpg'
+image[6]= 'https://www.ecell-iitkgp.org/images/gallery1/ges3.jpg'
+image[7]= 'https://www.ecell-iitkgp.org/images/gallery1/ges4.jpg'
+image[8]= 'https://www.ecell-iitkgp.org/images/gallery1/ges5.jpg'
+image[9]= 'https://www.ecell-iitkgp.org/images/gallery1/ges6.jpg'
+image[10]='https://www.ecell-iitkgp.org/images/gallery1/ges7.jpg'
+image[11]='https://www.ecell-iitkgp.org/images/gallery1/ges8.jpg'
+// image[12]=''
+// image[13]=''
+// image[14]=''
+// image[15]='
+var index
+var x
+
+
+function fcuk(imgsrc,n)
+{
+document.getElementById('harshmodelid').style.display='flex';
+
+x=document.getElementById('imgmodal')
+
+x.src= imgsrc.src
+
+index=n
+}
+
+function leftclick()
+{ --index;
+  if(index<0) index=11 ;
+  x.src=image[index];
+  // x.style.animation='hii 0.5s linear'
+}
+function rightclick()
+{
+++index
+if(index>11)
+index=0;
+// x.style.animation='hii 0.5s linear'
+x.src=image[index];
+
+
+
+}
+
+
+var modal1=document.getElementById('harshmodelid')
+
+function cross()
+{
+  modal1.style.display='none'
+}
+
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+
+
+
+var textanim1= document.getElementById('textbig1');
+var textanim11 =document.getElementById('textsmall1');
+var textanim2= document.getElementById('textbig2');
+var textanim22 =document.getElementById('textsmall2');
+var textanim3= document.getElementById('textbig3');
+var textanim33 =document.getElementById('textsmall3');
+var textanim4= document.getElementById('textbig4');
+var textanim44 =document.getElementById('textsmall4');
+var textanim5= document.getElementById('textbig5');
+var textanim55 =document.getElementById('textsmall5');
+var textanim6= document.getElementById('textbig6');
+var textanim66 =document.getElementById('textsmall6');
+var textanim7= document.getElementById('textbig7');
+var textanim77 =document.getElementById('textsmall7');
+var textanim8= document.getElementById('textbig8');
+var textanim88 =document.getElementById('textsmall8');
+var textanim9= document.getElementById('textbig9');
+var textanim99 =document.getElementById('textsmall9');
+var textanim10= document.getElementById('textbig10');
+var textanim1010 =document.getElementById('textsmall10');
+var textanim111= document.getElementById('textbig11');
+var textanim1111 =document.getElementById('textsmall11');
+var textanim12= document.getElementById('textbig12');
+var textanim1212 =document.getElementById('textsmall12');
+
+
+
+function texthover1() {
+
+textanim1.style.display="block"
+textanim11.style.animation="hii 0.4s linear"
+textanim11.style.display="block"
+textanim1.style.animation="hii 0.2s linear"
+
+}
+
+function textout1() {
+  
+  
+textanim1.style.display="none"
+textanim11.style.display="none"
+
+}
+
+function texthover2() {
+
+textanim2.style.display="block"
+textanim22.style.animation="hii 0.4s linear"
+textanim22.style.display="block"
+textanim2.style.animation="hii 0.2s linear"
+
+}
+
+function textout2() {
+  
+  
+textanim2.style.display="none"
+textanim22.style.display="none"
+
+}
+
+function texthover3() {
+
+textanim3.style.display="block"
+textanim33.style.animation="hii 0.4s linear"
+textanim33.style.display="block"
+textanim3.style.animation="hii 0.2s linear"
+
+}
+
+function textout3() {
+  
+  
+textanim3.style.display="none"
+textanim33.style.display="none"
+
+}
+
+function texthover4() {
+
+textanim4.style.display="block"
+textanim44.style.animation="hii 0.4s linear"
+textanim44.style.display="block"
+textanim4.style.animation="hii 0.2s linear"
+
+}
+
+function textout4() {
+  
+  
+textanim4.style.display="none"
+textanim44.style.display="none"
+
+}
+
+function texthover5() {
+
+textanim5.style.display="block"
+textanim55.style.animation="hii 0.4s linear"
+textanim55.style.display="block"
+textanim5.style.animation="hii 0.2s linear"
+
+}
+
+function textout5() {
+  
+  
+textanim5.style.display="none"
+textanim55.style.display="none"
+
+}
+
+function texthover6() {
+
+textanim6.style.display="block"
+textanim66.style.animation="hii 0.4s linear"
+textanim66.style.display="block"
+textanim6.style.animation="hii 0.2s linear"
+
+}
+
+function textout6() {
+  
+  
+textanim6.style.display="none"
+textanim66.style.display="none"
+
+}
+
+function texthover7() {
+
+textanim7.style.display="block"
+textanim77.style.animation="hii 0.4s linear"
+textanim77.style.display="block"
+textanim7.style.animation="hii 0.2s linear"
+
+}
+
+function textout7() {
+  
+  
+textanim7.style.display="none"
+textanim77.style.display="none"
+
+}
+
+function texthover8() {
+
+textanim8.style.display="block"
+textanim88.style.animation="hii 0.4s linear"
+textanim88.style.display="block"
+textanim8.style.animation="hii 0.2s linear"
+
+}
+
+function textout8() {
+  
+  
+textanim8.style.display="none"
+textanim88.style.display="none"
+
+}
+
+function texthover9() {
+
+textanim9.style.display="block"
+textanim99.style.animation="hii 0.4s linear"
+textanim99.style.display="block"
+textanim9.style.animation="hii 0.2s linear"
+
+}
+
+function textout9() {
+  
+  
+textanim9.style.display="none"
+textanim99.style.display="none"
+
+}
+
+function texthover10() {
+
+textanim10.style.display="block"
+textanim1010.style.animation="hii 0.4s linear"
+textanim1010.style.display="block"
+textanim10.style.animation="hii 0.2s linear"
+
+}
+
+function textout10() {
+  
+  
+textanim10.style.display="none"
+textanim1010.style.display="none"
+
+}
+
+function texthover11() {
+
+textanim111.style.display="block"
+textanim1111.style.animation="hii 0.4s linear"
+textanim1111.style.display="block"
+textanim111.style.animation="hii 0.2s linear"
+
+}
+
+function textout11() {
+  
+  
+textanim111.style.display="none"
+textanim1111.style.display="none"
+
+}
+
+function texthover12() {
+
+textanim12.style.display="block"
+textanim1212.style.animation="hii 0.4s linear"
+textanim1212.style.display="block"
+textanim12.style.animation="hii 0.2s linear"
+
+}
+
+function textout12() {
+  
+  
+textanim12.style.display="none"
+textanim1212.style.display="none"
+
+}
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
